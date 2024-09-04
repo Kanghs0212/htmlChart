@@ -24,7 +24,7 @@
 1. 해당 검색창을 클릭할 시 focus 이벤트가 발생하여 해당 검색창의 크기를 늘려주었으며, 마찬가지로 transition을 통해 자연스러운 모션을 구현하였습니다.
 
 
-
+&nbsp;&nbsp;
 ### 특징 3
 ![chart-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/5e5fb365-4190-4b07-9290-f33f8119bc8b)
 
