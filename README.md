@@ -29,3 +29,13 @@
 ![chart-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/5e5fb365-4190-4b07-9290-f33f8119bc8b)
 
 - 물론 정지된 차트 그림을 집어넣거나 직접 그려서 표현할수 있었지만 Chart.js을 이용한 반응형 차트를 통해 사용자에게 상호작용이 일어나고있음을 알려주어 지루하지 않게해주었습니다.
+
+
+&nbsp;&nbsp;
+
+### 그 
+![디자인](https://github.com/user-attachments/assets/4f195052-c6c3-44c4-a173-201a57874b83)
+![메뉴](https://github.com/user-attachments/assets/a0d06bbb-df85-4229-b979-f9beb31655f5)
+
+- 여러 카드 디자인들도 평범한 박스 모양을 하기보단 뒤에 shadow 기능을 주어 좀 더 입체감이 들게 하였습니다.
+- 또한 font-awesome을 이용하여 오른쪽 위에 navbar쪽을 꾸며주었습니다.
