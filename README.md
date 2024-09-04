@@ -33,7 +33,7 @@
 
 &nbsp;&nbsp;
 
-### 그 
+### 그 외
 ![디자인](https://github.com/user-attachments/assets/4f195052-c6c3-44c4-a173-201a57874b83)
 ![메뉴](https://github.com/user-attachments/assets/a0d06bbb-df85-4229-b979-f9beb31655f5)
 
