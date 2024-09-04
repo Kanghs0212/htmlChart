@@ -6,3 +6,6 @@
 
 ### 기능 1
 ![leftbar_motion-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/18231eb5-d0d6-40f4-8727-acf731f3081b)
+
+- 마우스를 갖다대면 왼쪽 바가 확장되며, 숨어있던 메뉴들이 오른쪽으로 이동하는 모션이 실행됩니다.
+- 각 메뉴들을 누르면 해당 서비스 주소로 이동이 가능합니다.
