@@ -12,6 +12,8 @@
 1. 해당 메뉴의 position을 absolute로 준 뒤 left값을 마이너스를 줘 왼쪽으로 전체 크기의 3/4을 숨겼으며, 해당 바에 마우스를 올려놓으면 hover이벤트가 발생하여 left값을 다시 0으로 바꿔 나오도록 하였습니다. 또한 부드럽게 이어지도록 transition 기능을 넣어주었습니다.
 2. 글자는 transition대신 keyframe을 사용하여 좀 더 유동적인 움직임을 주었습니다.
 
+
+
 ### 특징 2
 ![sc-bar-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/bf028b1d-892e-4408-8e22-f8bfe3947b8c)
 
@@ -20,6 +22,8 @@
 - 검색창말고 다른 위치를 클릭하면 0.5초 이후에 검색창이 다시 수축하는 애니메이션이 실행됩니다.
 
 1. 해당 검색창을 클릭할 시 focus 이벤트가 발생하여 해당 검색창의 크기를 늘려주었으며, 마찬가지로 transition을 통해 자연스러운 모션을 구현하였습니다.
+
+
 
 ### 특징 3
 ![chart-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/5e5fb365-4190-4b07-9290-f33f8119bc8b)
