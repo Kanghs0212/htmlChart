@@ -9,8 +9,8 @@
 
 - 마우스를 갖다대면 왼쪽 바가 확장되며, 숨어있던 메뉴들이 오른쪽으로 이동하는 모션이 실행됩니다.
 - 각 메뉴들을 누르면 해당 서비스 주소로 이동이 가능합니다.
-- 원리는 해당 메뉴의 position을 absolute로 준 뒤 left값을 마이너스를 줘 왼쪽으로 전체 크기의 3/4을 숨겼으며, 해당 바에 마우스를 올려놓으면 hover이벤트가 발생하여 left값을 다시 0으로 바꿔 나오도록 하였습니다. 또한 부드럽게 이어지도록 transition 기능을 넣어주었습니다.
-- 글자는 transition대신 keyframe을 사용하여 좀 더 유동적인 움직임을 주었습니다.
+1. 해당 메뉴의 position을 absolute로 준 뒤 left값을 마이너스를 줘 왼쪽으로 전체 크기의 3/4을 숨겼으며, 해당 바에 마우스를 올려놓으면 hover이벤트가 발생하여 left값을 다시 0으로 바꿔 나오도록 하였습니다. 또한 부드럽게 이어지도록 transition 기능을 넣어주었습니다.
+2. 글자는 transition대신 keyframe을 사용하여 좀 더 유동적인 움직임을 주었습니다.
 
 ### 특징 2
 ![sc-bar-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/bf028b1d-892e-4408-8e22-f8bfe3947b8c)
