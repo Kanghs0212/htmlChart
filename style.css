@@ -173,6 +173,17 @@ body{
 }
 
 
+.list-badge {
+    position: absolute;
+    right: 5%;
+    
+}
+
+.right-nav {
+    height: 60px;
+    background-color: #f7f9fc;
+}
+
 
 @media screen and (max-width:1200px){
     
@@ -214,13 +225,3 @@ body{
     }
 }
 
-.list-badge {
-    position: absolute;
-    right: 5%;
-    
-}
-
-.right-nav {
-    height: 60px;
-    background-color: #f7f9fc;
-}
