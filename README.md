@@ -33,6 +33,14 @@
 
 &nbsp;&nbsp;
 
+### 특징 4
+![resize-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/bd70769d-63c8-4c85-ab5f-e666dc89d9cf)
+
+- 반응형 웹사이트를 구현하였습니다. 해당 웹 사이트는 모든 화면 크기와 해상도에서 잘 돌아가도록 하기 위하여 특정 화면 크기에 맞게 크기와 구조가 변합니다.
+- @Media screen을 이용하여 특정 px값 아래로 내려가면 여러 css 설정을 재 설정하도록 하여 구현하였습니다.
+
+&nbsp;&nbsp;
+
 ### 그 외
 ![디자인](https://github.com/user-attachments/assets/4f195052-c6c3-44c4-a173-201a57874b83)
 
@@ -43,3 +51,47 @@
 
 
 - 또한 font-awesome을 이용하여 오른쪽 위에 navbar쪽을 꾸며주었습니다.
+
+
+### 잡다한 문제들
+
+1. 검색창에 focus 이벤트가 발생했을때 width 길이를 바꾸고 transition을 주었는데 저장하여도 애니메이션이 적용되지 않았다.
+- 이에 20분동안 여러 부분을 수정해본결과 html 맨 위에 style.css를 부트 스트랩 코드줄보다 아래로 내리니 해결되었다.
+- 아무래도 이 검색창이 부트스트랩의 navbar에 붙어있는 기능이였기때문에, style.css보다 이후에 적용되어버리면서 우선순위 문제로 크기변화가 적용되지 않았던것 같다.
+```html
+   <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+```
+&nbsp;&nbsp;
+
+2. 왼쪽 바가 확장될때 x축 화면이 길어짐에 따라 아래에 스크롤이 생기는 문제.
+- 분명 왼쪽 메뉴바는 position이 absolute이기에 배경으로부터 공중에 띄워져있는 상태지만 left를 0으로 주게되면 화면이 약간 길어지면서 스크롤이 생기는 문제가 발생하였다.
+- 여러 해결법을 찾긴했는데 제일 간단한 방법은 body 태그에 overflow-x를 hidden으로 놓아 짤리는 부분은 숨기게하여 x축 길이가 길어짐에 따른 스크롤이 생기는걸 방지하였다.
+
+```css
+body{
+    overflow-x: hidden;
+}
+```
+
+3. html, css 외에도 Chart.js가 문제를 보였는데, 해당 사이트를 축소시키면 마찬가지로 차트크기도 줄어들게 하였는데, 이상하게 다시 화면을 늘릴땐 차트 화면이 작아진채로 고정되는 버그가 생겼었다.
+- 이에 인터넷을 검색하여 찾아본 결과, 다음과 같은 옵션을 주니 해결이 되었다.
+
+```javascript
+options: {
+                responsive: true,
+                onResize: handleResize,
+                maintainAspectRatio: false,
+                showScale: false,
+                borderColor: 'purple',
+                backgroundColor: 'mediumpurple',
+
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+
+            }
+```
